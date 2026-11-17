@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lenscam user guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p class="mark">Lenscam</p>
+    <h1>Shoot once. Keep the master. Read it on the iPhone.</h1>
+    <p class="lede">A capture is the file the camera wrote, plus a sidecar. Translation, captions, and briefs sit beside that file. They are not written into it.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Take a picture</h2>
+      <ol>
+        <li>Tap the sliders icon for the looks, including Grain, and for Exposure through Mono. Import filter reads a JSON file of saturation, contrast, temperature, and grain. Use the bolt for flash and the rotating arrows to switch cameras. The moon is night mode in every genre. The dial is manual ISO, shutter, white balance, and focus. The aperture icon is Camera Assistant: quick tap, palm, voice, a floating shutter, lens switching, and focus tuning. Then swipe the names above the shutter until the genre you want sits on the gold mark: Photography, Portrait, Landscape, Nature, Food, Wildlife, Sport, or Cinematic.</li>
+        <li>Read the zoom pill. It says Optical, Sensor crop, Digital, Past sharp crop, or Not measured.</li>
+        <li>The genre sets the lens, focus, and exposure. If the frame needs one more change, tap Apply, then press the shutter.</li>
+        <li>Tap the sliders icon for filters and the exposure tools. Enhance copy, when it is on, is a separate file. The dial icon opens manual ISO, shutter, focus, white balance, RAW when the phone supports it, presets, and the histogram, zebra, and focus-peaking guides.</li>
+        <li>Tap the shutter for one photo. Hold it for a burst in any still genre. The sharpest frame is the master, and the other frames stay labeled as burst files. Sport takes a four-frame burst on a tap. Cine records until you press again.</li>
+        <li>Open the library for the hash, the master, and any labeled copy.</li>
+      </ol>
+      <p>A coach line shows up only when the shot is not ready. Read, Brief, and Evidence live in the more menu. On a simulator with no camera, use Import. That still is marked “Not measured” because no lens was involved.</p>
+    </section>
+
+    <section>
+      <h2>Genres</h2>
+      <table>
+        <thead>
+          <tr><th>Genre</th><th>What you leave with</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Photography</td><td>The master only. ProRAW when the phone supports it.</td></tr>
+          <tr><td>Portrait</td><td>Live depth blur, lighting, and an f-stop. The master keeps the original and the depth map. The portrait copy is separate.</td></tr>
+          <tr><td>Landscape</td><td>The master, plus a copy that can straighten a measured horizon.</td></tr>
+          <tr><td>Nature</td><td>The master, plus a copy with a little edge contrast. Detail is not invented.</td></tr>
+          <tr><td>Food</td><td>The wide lens, the Warm look when you have not chosen another, and a warmer <code>food.jpg</code> beside the master.</td></tr>
+          <tr><td>Wildlife</td><td>The longest optical lens. The copy does not reconstruct fur or feathers.</td></tr>
+          <tr><td>Sport</td><td>A tap takes four frames. Hold the shutter to keep going. The sharpest frame is the master. The other frames stay labeled as burst files.</td></tr>
+          <tr><td>Cinematic</td><td>An ungraded recording. A letterboxed still is a separate file.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Profiles</h2>
+      <table>
+        <thead>
+          <tr><th>Profile</th><th>What you leave with</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Master</td><td>The largest still. ProRAW when the phone supports it, with a preview beside the hashed raw file.</td></tr>
+          <tr><td>Clarity</td><td>The master, plus <code>clarity.jpg</code>. The copy is sharpened. The master is not.</td></tr>
+          <tr><td>Zoom</td><td>An honest meter. Lenscam does not invent detail past the sharp crop.</td></tr>
+          <tr><td>Read</td><td>Text and barcodes from the still, then a translation when that language is installed.</td></tr>
+          <tr><td>Interview</td><td>The video, the original audio, a transcript, <code>captions.srt</code>, and a brief written from the words.</td></tr>
+          <tr><td>Brief</td><td>A title, summary, and next steps from the text in the frame. Empty text does not become a guessed description.</td></tr>
+          <tr><td>Evidence</td><td>A hashed master, optional location, and the text that was read. No brief. No sharpened copy.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Translate</h2>
+      <p>In the library, tap the speech bubble and choose the language. If the pack is not on the iPhone yet, open the capture and tap Translate. The system download keeps the original wording in the sidecar.</p>
+    </section>
+
+    <section>
+      <h2>Trust the file</h2>
+      <p>Every master has a SHA-256. Copy it from the capture. Evidence can share a one-page report with that hash, the zoom band, the location if you allowed it, and the text that was read. Saving to Photos makes a copy. The hashed file stays in Lenscam.</p>
+    </section>
+
+    <section>
+      <h2>Ask Siri</h2>
+      <ul>
+        <li>“Start an evidence shoot in Lenscam.”</li>
+        <li>“Read text with Lenscam.”</li>
+      </ul>
+      <p>Where the system includes Visual Intelligence for apps, a look through the system camera can offer “Read in Lenscam.”</p>
+    </section>
+
+    <section>
+      <h2>When something is missing</h2>
+      <dl>
+        <dt>No brief, and the note says nothing readable</dt>
+        <dd>The model only writes from text Vision or the transcript already found. Fill the frame with the page, or check the microphone.</dd>
+        <dt>Apple Intelligence is off</dt>
+        <dd>Capture, zoom, reading, and translation continue. Briefs wait until the model is on and ready.</dd>
+        <dt>No location on an evidence shot</dt>
+        <dd>Permission was off, or the phone had no fix yet. The hash is still there.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>Version 0.1. The same guide is in the repository under docs/user-guide.md.</p>
+  </footer>
+</body>
+</html>

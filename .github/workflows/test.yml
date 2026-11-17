@@ -1,0 +1,13 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  core:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Capture policy tests
+        run: swift test
